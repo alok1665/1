@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Stationary</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Stationary</value>
+    </caseValues>
+    <fields>
+        <label><!-- Developement Center --></label>
+        <name>Developement_Center__c</name>
+        <picklistValues>
+            <masterLabel>Class 1</masterLabel>
+            <translation><!-- Class 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Class 2</masterLabel>
+            <translation><!-- Class 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Class 3</masterLabel>
+            <translation><!-- Class 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Class 4</masterLabel>
+            <translation><!-- Class 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Class 5</masterLabel>
+            <translation><!-- Class 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Class 6</masterLabel>
+            <translation><!-- Class 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Class 7</masterLabel>
+            <translation><!-- Class 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Class 8</masterLabel>
+            <translation><!-- Class 8 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>Location__c</name>
+        <picklistValues>
+            <masterLabel>Agra</masterLabel>
+            <translation><!-- Agra --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delhi</masterLabel>
+            <translation><!-- Delhi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kanpur</masterLabel>
+            <translation><!-- Kanpur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pune</masterLabel>
+            <translation><!-- Pune --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>jammu</masterLabel>
+            <translation><!-- jammu --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Select Stationry Item --></label>
+        <name>Select_Stationry_Item__c</name>
+        <picklistValues>
+            <masterLabel>Book</masterLabel>
+            <translation><!-- Book --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Duster</masterLabel>
+            <translation><!-- Duster --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Notebook</masterLabel>
+            <translation><!-- Notebook --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pencil</masterLabel>
+            <translation><!-- Pencil --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pencil Sharpener</masterLabel>
+            <translation><!-- Pencil Sharpener --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plastic Folder</masterLabel>
+            <translation><!-- Plastic Folder --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Student --></label>
+        <name>Student__c</name>
+        <relationshipLabel><!-- Stationary --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Teacher --></label>
+        <name>tEACHER__c</name>
+        <relationshipLabel><!-- Stationary --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

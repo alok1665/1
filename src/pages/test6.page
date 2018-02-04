@@ -1,0 +1,11 @@
+<apex:page controller="ChooseColour">
+    <apex:form >
+        <apex:selectList id="chooseColor" value="{!string1}" size="1" required="true">
+            <apex:selectOption itemValue="Red" itemLabel="Red"></apex:selectOption>
+            <apex:selectOption itemValue="Black" itemLabel="Black"></apex:selectOption>
+            <apex:selectoption itemValue="Gray" itemlabel="Gray"></apex:selectoption>
+        </apex:selectList>
+    
+    </apex:form>
+
+</apex:page>

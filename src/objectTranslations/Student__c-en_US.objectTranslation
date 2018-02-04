@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Student</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Students</value>
+    </caseValues>
+    <fields>
+        <help><!-- Please Fill Interested area --></help>
+        <label><!-- Additional Activities --></label>
+        <name>Additional_Activities__c</name>
+        <picklistValues>
+            <masterLabel>Dance</masterLabel>
+            <translation><!-- Dance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In house training</masterLabel>
+            <translation><!-- In house training --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Music</masterLabel>
+            <translation><!-- Music --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sports</masterLabel>
+            <translation><!-- Sports --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Registration Number --></label>
+        <name>Registration_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Student Id --></label>
+        <name>Student_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Teacher --></label>
+        <name>Teacher__c</name>
+        <relationshipLabel><!-- Students --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

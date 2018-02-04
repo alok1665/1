@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>InDevelopment</deploymentStatus>
+    <description>Its teacher object. its public open for shearing,</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Age__c</fullName>
+        <description>Enter Your age</description>
+        <externalId>false</externalId>
+        <label>Age</label>
+        <precision>3</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Date__c</fullName>
+        <description>Enter date of joining</description>
+        <externalId>false</externalId>
+        <label>Date</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>End_Date__c</fullName>
+        <description>End date</description>
+        <externalId>false</externalId>
+        <label>End Date</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Pi__c</fullName>
+        <description>Pick data as year of experiences.</description>
+        <externalId>false</externalId>
+        <label>Picklist</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Experienced</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>New joiners</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Picklist__c</fullName>
+        <description>Pick list</description>
+        <externalId>false</externalId>
+        <label>Picklist</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Fulltime</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Hourly</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Night-Shift</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Parttime</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Select_Type__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>Select date</description>
+        <externalId>false</externalId>
+        <label>Select Type</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Teacher</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>A-{000}</displayFormat>
+        <label>Teacher Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Teachers</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>EndDate_should_More_30Dstarting</fullName>
+        <active>false</active>
+        <description>End Date should be of any date up to 30 days from the Start Date</description>
+        <errorConditionFormula>Value(TEXT((YEAR(  End_Date__c  )*12+ MONTH( End_Date__c ))- 
+(YEAR(  Date__c  )*12+MONTH( Date__c  ))) ) &lt; 1</errorConditionFormula>
+        <errorDisplayField>End_Date__c</errorDisplayField>
+        <errorMessage>Enter date should after 30 day.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>EndDate_should_greater_Starting</fullName>
+        <active>false</active>
+        <description>End Date should be greater than the Start Date</description>
+        <errorConditionFormula>Date__c &lt; End_Date__c = false</errorConditionFormula>
+        <errorDisplayField>Date__c</errorDisplayField>
+        <errorMessage>Please Enter  start date Enter.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Start_End_date_same_month</fullName>
+        <active>false</active>
+        <errorConditionFormula>MONTH( End_Date__c )  &lt;&gt;  MONTH( Date__c )</errorConditionFormula>
+        <errorDisplayField>End_Date__c</errorDisplayField>
+        <errorMessage>please enter same date</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Start_End_date_same_quarter</fullName>
+        <active>false</active>
+        <errorConditionFormula>value(text((YEAR( End_Date__c)*12) + MONTH( End_Date__c )- (YEAR( End_Date__c)*12) + MONTH(Date__c ))) &gt; 3</errorConditionFormula>
+        <errorDisplayField>End_Date__c</errorDisplayField>
+        <errorMessage>End date and Start Date In same Quarter</errorMessage>
+    </validationRules>
+</CustomObject>

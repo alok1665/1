@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Teacher</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Teachers</value>
+    </caseValues>
+    <fields>
+        <label><!-- Age --></label>
+        <name>Age__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date --></label>
+        <name>Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Picklist --></label>
+        <name>Pi__c</name>
+        <picklistValues>
+            <masterLabel>Experienced</masterLabel>
+            <translation><!-- Experienced --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New joiners</masterLabel>
+            <translation><!-- New joiners --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Picklist --></label>
+        <name>Picklist__c</name>
+        <picklistValues>
+            <masterLabel>Fulltime</masterLabel>
+            <translation><!-- Fulltime --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hourly</masterLabel>
+            <translation><!-- Hourly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Night-Shift</masterLabel>
+            <translation><!-- Night-Shift --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parttime</masterLabel>
+            <translation><!-- Parttime --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Select Type --></label>
+        <name>Select_Type__c</name>
+    </fields>
+    <layouts>
+        <layout>Teacher Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Enter date should after 30 day. --></errorMessage>
+        <name>EndDate_should_More_30Dstarting</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter  start date Enter. --></errorMessage>
+        <name>EndDate_should_greater_Starting</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- please enter same date --></errorMessage>
+        <name>Start_End_date_same_month</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- End date and Start Date In same Quarter --></errorMessage>
+        <name>Start_End_date_same_quarter</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,15 @@
+Hi {!Opportunity.OwnerFirstName},  
+
+You have  an open opportunity with approaching close date.
+
+Please make sure Close date is correct.
+
+Name: {!Opportunity.Name}
+Amount:{!Opportunity.Amount}
+Stage:{!Opportunity.StageName}
+Close Date:{!Opportunity.CloseDate}
+
+For more information please click Here {!Opportunity.Link}
+
+Regards,
+{!Organization.Name}

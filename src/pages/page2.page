@@ -1,0 +1,10 @@
+<apex:page standardController="Account" showHeader="true">
+   <apex:pageblock title="Hello{!$User.FirstName}" >
+       you belong to {!Account.Name}<br/>
+       
+   
+   </apex:pageblock>           
+   
+   <apex:detail subject="{!account}" relatedList="false"/>
+       <apex:relatedList list="Opportunity" subject="{!$CurrentPage.parameters.relatedId}"/>
+</apex:page>

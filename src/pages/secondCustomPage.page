@@ -1,0 +1,15 @@
+<apex:page standardController="Case" recordSetVar="cases">
+    <apex:pageBlock >
+        <apex:form >
+            <apex:panelGrid columns="2">
+                    <apex:outputLabel value="View" />
+                    <apex:selectList value="{!filterId}" Size="1" >
+                        <apex:actionSupport event="onchsnge" rerender="list"/>
+                        <apex:selectOption value="{!listviewoptions}"></apex:selectOption>
+                    </apex:selectList>
+                    
+            </apex:panelGrid>
+            
+        </apex:form>
+    </apex:pageBlock>
+</apex:page>
